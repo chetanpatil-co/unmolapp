@@ -23,8 +23,9 @@ public class LocalDatabase extends SQLiteOpenHelper {
     public static final String Id = "id";
     public static final String FIRSTNAME = "firstName";
     public static final String LASTNAME = "lastName";
-    public static final String ADDRESS = "address";
     public static final String MOBILE = "mobile";
+    public static final String EMAIL = "email";
+    public static final String ADDRESS = "address";
     public static final String STATUS = "status";
 
 
