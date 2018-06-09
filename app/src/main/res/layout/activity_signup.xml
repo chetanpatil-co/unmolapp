@@ -9,11 +9,17 @@
     android:padding="10dp"
     tools:context="com.sspl.unmolapp.Activities.SignupActivity">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/unmol_logo"/>
+
     <EditText
         android:id="@+id/fName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/appupdate"
         android:hint="First Name"
@@ -49,12 +55,22 @@
         android:hint="Email"
         android:gravity="center"/>
 
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/appupdate"
+        android:hint="City"
+        android:gravity="center"/>
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/primary_round"
         android:text="Register"
         android:textColor="@color/black"
