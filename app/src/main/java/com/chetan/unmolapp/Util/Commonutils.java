@@ -2,7 +2,6 @@ package com.chetan.unmolapp.Util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Environment;
@@ -25,14 +24,6 @@ import java.nio.channels.FileChannel;
 
 @SuppressLint("NewApi")
 public class Commonutils {
-
-    public static String mlatit = new String();
-
-    public static String mlongi = new String();
-    static MediaPlayer m = new MediaPlayer();
-
-    public static String finalpath = null;
-
 
     public static boolean isInternetAvailable(Context c) {
         boolean haveConnectedWifi = false;
@@ -135,9 +126,6 @@ public class Commonutils {
         }
 
     }
-
-
-
 
     public static InputStream OpenHttpConnection1(String urlString)
             throws IOException {
