@@ -1,4 +1,4 @@
-package com.sspl.unmolapp.Activities;
+package com.chetan.unmolapp.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.sspl.unmolapp.Pojo.Register;
-import com.sspl.unmolapp.R;
-import com.sspl.unmolapp.Util.LocalDatabase;
+import com.chetan.unmolapp.Pojo.Register;
+import com.chetan.unmolapp.R;
+import com.chetan.unmolapp.Util.LocalDatabase;
 
 public class SignupActivity extends AppCompatActivity {
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/Wheat"
     android:orientation="vertical"
-    tools:context="com.sspl.unmolapp.Activities.LoginActivity">
+    tools:context="com.sspl.unmolapp.com.chetan.unmolapp.Activities.LoginActivity">
 
     <ImageView
         android:layout_width="100dp"

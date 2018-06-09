@@ -1,4 +1,4 @@
-package com.sspl.unmolapp.Util;
+package com.chetan.unmolapp.Util;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -39,7 +39,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
 
-import com.sspl.unmolapp.R;
+import com.chetan.unmolapp.R;
 import com.stericson.RootTools.RootTools;
 import com.stericson.RootTools.execution.CommandCapture;
 

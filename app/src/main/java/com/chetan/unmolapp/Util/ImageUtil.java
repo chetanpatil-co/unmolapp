@@ -1,4 +1,4 @@
-package com.sspl.unmolapp.Util;
+package com.chetan.unmolapp.Util;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

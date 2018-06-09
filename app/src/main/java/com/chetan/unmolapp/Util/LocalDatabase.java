@@ -1,4 +1,4 @@
-package com.sspl.unmolapp.Util;
+package com.chetan.unmolapp.Util;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.sspl.unmolapp.Pojo.Register;
+import com.chetan.unmolapp.Pojo.Register;
 
 
 public class LocalDatabase extends SQLiteOpenHelper {

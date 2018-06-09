@@ -1,10 +1,10 @@
-package com.sspl.unmolapp.Activities;
+package com.chetan.unmolapp.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.sspl.unmolapp.R;
+import com.chetan.unmolapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

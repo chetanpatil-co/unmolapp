@@ -1,4 +1,4 @@
-package com.sspl.unmolapp.Pojo;
+package com.chetan.unmolapp.Pojo;
 
 /**
  * Created by Pallav on 2/6/2018.

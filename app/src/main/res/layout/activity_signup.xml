@@ -7,7 +7,7 @@
     android:background="@color/Wheat"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.sspl.unmolapp.Activities.SignupActivity">
+    tools:context="com.sspl.unmolapp.com.chetan.unmolapp.Activities.SignupActivity">
 
     <ImageView
         android:layout_width="100dp"
