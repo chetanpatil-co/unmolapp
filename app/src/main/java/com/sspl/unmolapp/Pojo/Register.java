@@ -7,7 +7,32 @@ package com.sspl.unmolapp.Pojo;
 public class Register {
 
     private java.lang.Long id;
-    String firstName, lastName, address, mobile, otp, couponcode , status;
+    String firstName;
+    String lastName;
+    String address;
+    String mobile;
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    String city;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    String email;
+    String otp;
+    String couponcode;
+    String status;
 
     public Long getId() {
         return id;

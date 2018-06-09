@@ -53,6 +53,7 @@ public class LocalDatabase extends SQLiteOpenHelper {
                     "" + LASTNAME + " text ," +
                     "" + ADDRESS + " text ," +
                     "" + MOBILE + " text," +
+                    "" + EMAIL + " text," +
                     "" + STATUS + " text);";
             db.execSQL(register_table_query);
 
@@ -79,8 +80,9 @@ public class LocalDatabase extends SQLiteOpenHelper {
             values.put(Id, r.getId());
             values.put(FIRSTNAME, r.getFirstName());
             values.put(LASTNAME, r.getLastName());
-            values.put(ADDRESS, r.getAddress());
             values.put(MOBILE, r.getMobile());
+            values.put(EMAIL, r.getEmail());
+            values.put(ADDRESS, r.getCity());
             values.put(STATUS, r.getStatus());
 
             db.insert(REGISTER_TABLE, null, values);
