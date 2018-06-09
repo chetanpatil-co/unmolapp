@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.chetan.unmolapp.R;
+import com.chetan.unmolapp.Util.Commonutils;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Commonutils.backupdata("UNMOLAPP");
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);

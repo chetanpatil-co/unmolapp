@@ -48,7 +48,7 @@ public class LocalDatabase extends SQLiteOpenHelper {
         try {
             register_table_query = "create table if not exists "
                     + REGISTER_TABLE + "(" + Id
-                    + " integer, " +
+                    + " INTEGER PRIMARY KEY, " +
                     "" + FIRSTNAME + " text ," +
                     "" + LASTNAME + " text ," +
                     "" + ADDRESS + " text ," +
@@ -74,6 +74,34 @@ public class LocalDatabase extends SQLiteOpenHelper {
     public String RegisterUser(Register r) {
 
         String reslt = null;
+        SQLiteDatabase db = this.getWritableDatabase();
+        try {
+            ContentValues values = new ContentValues();
+            values.put(Id, r.getId());
+            values.put(FIRSTNAME, r.getFirstName());
+            values.put(LASTNAME, r.getLastName());
+            values.put(MOBILE, r.getMobile());
+            values.put(EMAIL, r.getEmail());
+            values.put(ADDRESS, r.getCity());
+            values.put(STATUS, r.getStatus());
+
+            long id = db.insert(REGISTER_TABLE, null, values);
+            System.out.println("ID = "+id);
+            reslt = "Success";
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            reslt = "Error";
+            e.printStackTrace();
+        }
+        db.close();
+        return reslt;
+    }
+
+    public String CheckLogin(Register r) {
+
+        String reslt = null;
+        String username = r.getEmail();
+        String password = r.getMobile();
         SQLiteDatabase db = this.getWritableDatabase();
         try {
             ContentValues values = new ContentValues();
