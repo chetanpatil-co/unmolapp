@@ -51,7 +51,11 @@ public class SignupActivity extends AppCompatActivity {
                 r.setStatus("Active");
 
                 String result = localDatabase.RegisterUser(r);
-                if (result.equalsIgnoreCase("Success")) {
+                String[] res = result.split("#");
+                String result1 = res[0];
+                long id = Long.parseLong(res[1]);
+                System.out.println("USER ID IS = "+id);
+                if (result1.equalsIgnoreCase("Success")) {
                     startActivity(new Intent(SignupActivity.this, LoginActivity.class));
                     finish();
                 } else {
